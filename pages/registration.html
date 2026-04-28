@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>registration</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <h1>registration</h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li><a class="header-nav-item" href="articles.html">Статті</a></li>
+            <li><a class="header-nav-item" href="catalog.html">Каталог</a></li>
+            <li><a class="header-nav-item" href="contacts.html">Контакти</a></li>
+            <li><a class="header-nav-item" href="gallery.html">Галерея</a></li>
+            <li><a class="header-nav-item" href="page-nav.html">Навігація</a></li>
+            <li><a class="header-nav-item" href="registration.html">Реєстрація</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+
+        <form class="contacts-form" action="https://tests.fomenko.top/echo/index.php" method="get"
+          enctype="multipart/form-data">
+
+          <div>
+            <label for="name">Прізвище ім'я:</label>
+            <input class="capitalize" type="text" id="name" name="name" required>
+          </div>
+
+
+          <div>
+            <label for="photo">Додати фотографію:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+
+          <div>
+            <label for="website">Адреса сайту:</label>
+            <input type="url" id="website" name="website" value="https://mysite.name">
+          </div>
+
+          <fieldset>
+            <legend>Стать:</legend>
+
+            <div class="form-input-box">
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">Чоловіча</label>
+            </div>
+
+            <div class="form-input-box">
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Жіноча</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="birthdate">Дата народження:</label>
+            <input type="date" id="birthdate" name="birthdate">
+          </div>
+
+          <fieldset>
+            <legend>Виберіть кухню:</legend>
+
+            <div class="form-input-box">
+              <input type="checkbox" id="ukrainian" name="cuisine[]" value="ukrainian">
+              <label for="ukrainian">Українська</label>
+            </div>
+
+            <div class="form-input-box">
+              <input type="checkbox" id="italian" name="cuisine[]" value="italian">
+              <label for="italian">Італійська</label>
+            </div>
+
+            <div class="form-input-box">
+              <input type="checkbox" id="japanese" name="cuisine[]" value="japanese">
+              <label for="japanese">Японська</label>
+            </div>
+
+            <div class="form-input-box">
+              <input type="checkbox" id="mexican" name="cuisine[]" value="mexican">
+              <label for="mexican">Мексиканська</label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="about">Про себе:</label>
+            <textarea class="capitalize" id="about" name="about" rows="5" cols="40"></textarea>
+          </div>
+
+          <div class="form-button-box">
+            <button class="contacts-form-button" type="submit">Зареєструватися</button>
+            <button class="contacts-form-button" type="reset">Очистити форму</button>
+          </div>
+
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer container">
+        <p>&copy; FreshFenix</p>
+        <a href="../index.html">Повернутись на головну</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
