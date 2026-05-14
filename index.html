@@ -10,46 +10,142 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="header index-header">
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li><a class="header-nav-item" href="pages/articles.html">Статті</a></li>
-            <li><a class="header-nav-item" href="pages/catalog.html">Каталог</a></li>
-            <li><a class="header-nav-item" href="pages/contacts.html">Контакти</a></li>
-            <li><a class="header-nav-item" href="pages/gallery.html">Галерея</a></li>
-            <li><a class="header-nav-item" href="pages/page-nav.html">Навігація</a></li>
-            <li><a class="header-nav-item" href="pages/registration.html">Реєстрація</a></li>
-          </ul>
-        </nav>
+        <div class="header__wrapper">
+          <button class="header__burger" type="button" aria-label="Open menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="header-nav">
+
+            <ul class="header-nav-list">
+
+              <li>
+                <a class="header-nav-item" href="pages/articles.html">
+
+                  <span>статті</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="header-nav-item" href="pages/catalog.html">
+
+                  <span>каталог</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="header-nav-item" href="pages/contacts.html">
+
+                  <span>контакти</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="header-nav-item" href="pages/gallery.html">
+
+                  <span>галерея</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="header-nav-item" href="pages/page-nav.html">
+
+                  <span>навігація</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="header-nav-item" href="pages/registration.html">
+
+                  <span>реєстрація</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero-nav">
         <div class="container">
-          <h1>Контент у довільній формі</h1>
-          <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, quidem?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis ut similique rem minima
-              recusandae.
-              Itaque eaque soluta exercitationem est!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum autem esse, architecto maiores soluta non
-              vitae veritatis voluptates! Dignissimos cumque quod vitae quia mollitia officiis optio accusantium? Sit,
-              ad
-              voluptas?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, quo, vitae quidem voluptate beatae ea
-              veniam
-              fugit ipsum officiis maiores consectetur error architecto delectus id nemo! Aut officiis eum voluptates
-              quidem
-              unde, debitis sapiente, et voluptate dolorum possimus vero soluta.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum exercitationem obcaecati esse aspernatur
-              error blanditiis aliquid sed laborum facere molestiae amet porro, qui rem expedita consequuntur adipisci
-              quod
-              perspiciatis magnam fugit, consectetur fuga neque odio ea cupiditate? Adipisci omnis veniam eligendi
-              magnam
-              voluptas officia, dolore, eaque nesciunt doloremque nemo atque.</p>
-          </div>
+
+          <nav class="hero-nav__menu">
+
+            <a class="hero-nav__card hero-nav__card--articles" href="pages/articles.html">
+
+              <span class="hero-nav__icon">📰</span>
+
+              <h2 class="hero-nav__title">Статті</h2>
+
+              <p class="hero-nav__text">
+                Новини, матеріали та цікаві публікації
+              </p>
+            </a>
+
+            <a class="hero-nav__card hero-nav__card--catalog" href="pages/catalog.html">
+
+              <span class="hero-nav__icon">📚</span>
+
+              <h2 class="hero-nav__title">Каталог</h2>
+
+              <p class="hero-nav__text">
+                Список категорій та матеріалів
+              </p>
+            </a>
+
+            <a class="hero-nav__card hero-nav__card--contacts" href="pages/contacts.html">
+
+              <span class="hero-nav__icon">📩</span>
+
+              <h2 class="hero-nav__title">Контакти</h2>
+
+              <p class="hero-nav__text">
+                Зв'язок та контактна інформація
+              </p>
+            </a>
+
+            <a class="hero-nav__card hero-nav__card--gallery" href="pages/gallery.html">
+
+              <span class="hero-nav__icon">🖼️</span>
+
+              <h2 class="hero-nav__title">Галерея</h2>
+
+              <p class="hero-nav__text">
+                Зображення та мультимедійний контент
+              </p>
+            </a>
+
+            <a class="hero-nav__card hero-nav__card--navigation" href="pages/page-nav.html">
+
+              <span class="hero-nav__icon">🧭</span>
+
+              <h2 class="hero-nav__title">Навігація</h2>
+
+              <p class="hero-nav__text">
+                Додаткова навігація по сторінках
+              </p>
+            </a>
+
+            <a class="hero-nav__card hero-nav__card--registration" href="pages/registration.html">
+
+              <span class="hero-nav__icon">✨</span>
+
+              <h2 class="hero-nav__title">Реєстрація</h2>
+
+              <p class="hero-nav__text">
+                Створення акаунта та авторизація
+              </p>
+            </a>
+
+          </nav>
         </div>
+
       </section>
     </main>
     <footer>
@@ -58,6 +154,14 @@
       </div>
     </footer>
   </div>
+  <script>
+    const burger = document.querySelector('.header__burger');
+    const header = document.querySelector('.header');
+
+    burger.addEventListener('click', () => {
+      header.classList.toggle('header--open');
+    });
+  </script>
 </body>
 
 </html>
